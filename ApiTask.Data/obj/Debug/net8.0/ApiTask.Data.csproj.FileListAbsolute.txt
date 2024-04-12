@@ -1,0 +1,12 @@
+/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/obj/Debug/net8.0/ApiTask.Data.GeneratedMSBuildEditorConfig.editorconfig
+/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/obj/Debug/net8.0/ApiTask.Data.AssemblyInfoInputs.cache
+/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/obj/Debug/net8.0/ApiTask.Data.AssemblyInfo.cs
+/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/obj/Debug/net8.0/ApiTask.Data.csproj.CoreCompileInputs.cache
+/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/bin/Debug/net8.0/ApiTask.Data.deps.json
+/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/bin/Debug/net8.0/ApiTask.Data.dll
+/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/bin/Debug/net8.0/ApiTask.Data.pdb
+/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/obj/Debug/net8.0/ApiTask.Data.csproj.AssemblyReference.cache
+/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/obj/Debug/net8.0/ApiTask.Data.dll
+/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/obj/Debug/net8.0/refint/ApiTask.Data.dll
+/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/obj/Debug/net8.0/ApiTask.Data.pdb
+/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/obj/Debug/net8.0/ref/ApiTask.Data.dll

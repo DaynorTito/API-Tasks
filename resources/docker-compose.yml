@@ -1,0 +1,17 @@
+# Docker with SQL MySQL
+services:
+  db:
+   image: mysql:8.3
+   container_name: lab3-mysql-db
+   ports:
+     - "3307:3306"
+   environment:
+      MYSQL_ROOT_PASSWORD: '123456'
+      MYSQL_DATABASE: 'lab3-mysql-db'
+   restart: unless-stopped
+   volumes:
+      - mysql_data:/var/lib/mysql
+      - ./db/init-script.sql:/docker-entrypoint-initdb.d/databasemodel.sql
+  
+volumes:
+  mysql_data:
