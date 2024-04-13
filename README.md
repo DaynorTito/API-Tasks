@@ -9,7 +9,7 @@ The main purpose of the task management project is to manage, organize and track
 In order to deploy and run the application along with the database configuration, it is necessary to have the corresponding repository cloned on your machine. This can be achieved with the following command:
 
 ```bash
-git clone git@gitlab.com:daynot/api-csharp-sd3-daynortito.git
+git clone https://github.com/DaynorTito/API-Tasks.git
 ```
 
 2. Start docker compose 
@@ -131,7 +131,7 @@ If you are done using the endpoints you should terminate or remove the Docker co
 
 ```bash
 cd ..
-cd resoutves
+cd resources
 ```
 
 ```bash
