@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Task = ApiTask.Data.ScaffoldModels.Task;
 
 namespace ApiTask.Data.Repositories
 {

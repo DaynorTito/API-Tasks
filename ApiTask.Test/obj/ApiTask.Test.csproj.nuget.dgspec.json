@@ -1,0 +1,361 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Test/ApiTask.Test.csproj": {}
+  },
+  "projects": {
+    "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Api/ApiTask.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Api/ApiTask.Api.csproj",
+        "projectName": "ApiTask.Api",
+        "projectPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Api/ApiTask.Api.csproj",
+        "packagesPath": "/home/university/.nuget/packages/",
+        "outputPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/university/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/ApiTask.Data.csproj": {
+                "projectPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/ApiTask.Data.csproj"
+              },
+              "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Domain/ApiTask.Domain.csproj": {
+                "projectPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Domain/ApiTask.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.3.0, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.118, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/ApiTask.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/ApiTask.Data.csproj",
+        "projectName": "ApiTask.Data",
+        "projectPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/ApiTask.Data.csproj",
+        "packagesPath": "/home/university/.nuget/packages/",
+        "outputPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/university/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.3.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.118, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Domain/ApiTask.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Domain/ApiTask.Domain.csproj",
+        "projectName": "ApiTask.Domain",
+        "projectPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Domain/ApiTask.Domain.csproj",
+        "packagesPath": "/home/university/.nuget/packages/",
+        "outputPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/university/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/ApiTask.Data.csproj": {
+                "projectPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/ApiTask.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Test/ApiTask.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Test/ApiTask.Test.csproj",
+        "projectName": "ApiTask.Test",
+        "projectPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Test/ApiTask.Test.csproj",
+        "packagesPath": "/home/university/.nuget/packages/",
+        "outputPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Test/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/university/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Api/ApiTask.Api.csproj": {
+                "projectPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Api/ApiTask.Api.csproj"
+              },
+              "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/ApiTask.Data.csproj": {
+                "projectPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/ApiTask.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.14.0, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.9.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit.abstractions": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "xunit.assert": {
+              "target": "Package",
+              "version": "[2.7.1, )"
+            },
+            "xunit.extensibility.core": {
+              "target": "Package",
+              "version": "[2.7.1, )"
+            },
+            "xunit.extensibility.execution": {
+              "target": "Package",
+              "version": "[2.7.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

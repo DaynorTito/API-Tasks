@@ -1,13 +1,18 @@
 using ApiTask.Api;
 using ApiTask.Data;
 using ApiTask.Data.Repositories;
+using ApiTask.Domain.Ports;
+using ApiTask.Api.Adapters;
+using ApiTask.Api.Security;
+using ApiTask.Data.Migration;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.EntityFrameworkCore;
-using MySQL.Data.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+var migrationScript = new MigrationScript();
+migrationScript.Migrate();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
@@ -15,12 +20,15 @@ builder.Services.AddControllers();
 var connectionString = builder.Configuration.GetConnectionString("MySqlConection");
 
 builder.Services.AddDbContext<TaskDbContext>(options =>
-    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+        options.UseSqlite(connectionString));
 
+builder.Services.AddScoped<IUserPersistencePort, UserPersistanceAdapter>();
+builder
+    .Services.AddAuthentication("BasicAuthentication")
+    .AddScheme<AuthenticationSchemeOptions, SecurityAuth>("BasicAuthentication", null);
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -28,6 +36,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseAuthentication();
+app.UseAuthorization();
 app.MapControllers();
 
 var summaries = new[]
