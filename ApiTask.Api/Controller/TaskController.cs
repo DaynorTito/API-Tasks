@@ -2,9 +2,11 @@ using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using ApiTask.Data;
+using Microsoft.AspNetCore.Authorization;
+using Task = ApiTask.Data.ScaffoldModels.Task;
 
 
-namespace ApiTask.Api.Controllers
+namespace ApiTask.Api.Controller
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -12,16 +14,15 @@ namespace ApiTask.Api.Controllers
     {
         private readonly TaskDbContext _dbcontext;
 
-        public TaskController(TaskDbContext _context)
+        public TaskController(TaskDbContext context)
         {
-            _dbcontext = _context;
+            _dbcontext = context;
         }
 
         [HttpGet]
-        [Route("task")]
         public IActionResult GetTasks()
         {
-            List<Task> tasks = new List<Task>();
+            List<Data.ScaffoldModels.Task> tasks = new List<Data.ScaffoldModels.Task>();
             try
             {
                 tasks = _dbcontext.Tasks.ToList();
@@ -35,8 +36,8 @@ namespace ApiTask.Api.Controllers
         }
         
         [HttpGet]
-        [Route("task/{id}")]
-        public IActionResult GetTaskById(int id)
+        [Route("{id}")]
+        public IActionResult GetTaskById(String id)
         {
             try
             {
@@ -55,8 +56,8 @@ namespace ApiTask.Api.Controllers
         }
         
         [HttpPost]
-        [Route("create")]
-        public IActionResult CreateTask([FromBody] Task task)
+        [Authorize]
+        public IActionResult CreateTask([FromBody] Data.ScaffoldModels.Task task)
         {
             try
             {
@@ -72,8 +73,9 @@ namespace ApiTask.Api.Controllers
         }
         
         [HttpPut]
-        [Route("change/{id}")]
-        public IActionResult UpdateTask([FromBody] Task updatedTask)
+        [Authorize]
+        [Route("{id}")]
+        public IActionResult UpdateTask([FromBody] Data.ScaffoldModels.Task updatedTask)
         {
             try
             {
@@ -99,8 +101,9 @@ namespace ApiTask.Api.Controllers
         }
         
         [HttpDelete]
-        [Route("delete/{id}")]
-        public IActionResult DeleteTask(int id)
+        [Authorize]
+        [Route("{id}")]
+        public IActionResult DeleteTask(string id)
         {
             try
             {
@@ -120,6 +123,40 @@ namespace ApiTask.Api.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, new { message = e.Message });
             }
         }
-
+        
+        [HttpGet("{userId}/{priority}")]
+        public IActionResult GetUserTasksByPriority(string userId, string priority)
+        {
+            try
+            {
+                IQueryable<Data.ScaffoldModels.Task> tasksQuery = _dbcontext.Tasks
+                    .Where(t => t.UserId == userId); 
+                switch (priority.ToLower())
+                {
+                    case "high":
+                        tasksQuery = tasksQuery.Where(t => t.Priority == "high");
+                        break;
+                    case "medium":
+                        tasksQuery = tasksQuery.Where(t => t.Priority == "medium");
+                        break;
+                    case "low":
+                        tasksQuery = tasksQuery.Where(t => t.Priority == "low");
+                        break;
+                    case "without priority":
+                        tasksQuery = tasksQuery.Where(t => t.Priority == null);
+                        break;
+                    default:
+                        return StatusCode(StatusCodes.Status400BadRequest, new { message = "Invalid priority" });
+                }
+                tasksQuery = tasksQuery.OrderBy(t => t.Priority);
+                var tasks = tasksQuery.ToList();
+                return StatusCode(StatusCodes.Status200OK, new { message = "ok", response = tasks });
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = e.Message });
+            }
+        }
     }
 }

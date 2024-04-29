@@ -2,12 +2,12 @@
 services:
   db:
    image: mysql:8.3
-   container_name: lab3-mysql-db
+   container_name: lab4-mysql
    ports:
      - "3307:3306"
    environment:
       MYSQL_ROOT_PASSWORD: '123456'
-      MYSQL_DATABASE: 'lab3-mysql-db'
+      MYSQL_DATABASE: 'daynor.tito.mysql'
    restart: unless-stopped
    volumes:
       - mysql_data:/var/lib/mysql

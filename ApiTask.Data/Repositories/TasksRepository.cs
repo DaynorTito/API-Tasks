@@ -1,4 +1,5 @@
 using MySql.Data.MySqlClient;
+using Task = ApiTask.Data.ScaffoldModels.Task;
 
 namespace ApiTask.Data.Repositories;
 

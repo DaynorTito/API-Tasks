@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/ApiTask.Data.csproj": {}
+    "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/ApiTask.Data.csproj": {}
   },
   "projects": {
-    "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/ApiTask.Data.csproj": {
+    "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/ApiTask.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/ApiTask.Data.csproj",
+        "projectUniqueName": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/ApiTask.Data.csproj",
         "projectName": "ApiTask.Data",
-        "projectPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/ApiTask.Data.csproj",
+        "projectPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/ApiTask.Data.csproj",
         "packagesPath": "/home/university/.nuget/packages/",
-        "outputPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/obj/",
+        "outputPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/university/.nuget/NuGet/NuGet.Config"
@@ -47,13 +47,21 @@
               "target": "Package",
               "version": "[2.1.35, )"
             },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
             "MySql.Data": {
               "target": "Package",
               "version": "[8.3.0, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
-              "version": "[9.0.0-preview.1, )"
+              "version": "[8.0.2, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.118, )"
             }
           },
           "imports": [

@@ -22,10 +22,12 @@
     <PackageReference Include="MySql.Data" Version="8.3.0" />
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.118" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ApiTask.Data\ApiTask.Data.csproj" />
+    <ProjectReference Include="..\ApiTask.Domain\ApiTask.Domain.csproj" />
   </ItemGroup>
 
 </Project>

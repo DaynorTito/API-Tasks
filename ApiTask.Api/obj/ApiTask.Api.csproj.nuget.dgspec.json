@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Api/ApiTask.Api.csproj": {}
+    "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Api/ApiTask.Api.csproj": {}
   },
   "projects": {
-    "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Api/ApiTask.Api.csproj": {
+    "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Api/ApiTask.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Api/ApiTask.Api.csproj",
+        "projectUniqueName": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Api/ApiTask.Api.csproj",
         "projectName": "ApiTask.Api",
-        "projectPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Api/ApiTask.Api.csproj",
+        "projectPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Api/ApiTask.Api.csproj",
         "packagesPath": "/home/university/.nuget/packages/",
-        "outputPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Api/obj/",
+        "outputPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/university/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/ApiTask.Data.csproj": {
-                "projectPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/ApiTask.Data.csproj"
+              "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/ApiTask.Data.csproj": {
+                "projectPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/ApiTask.Data.csproj"
+              },
+              "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Domain/ApiTask.Domain.csproj": {
+                "projectPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Domain/ApiTask.Domain.csproj"
               }
             }
           }
@@ -86,6 +89,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.118, )"
             }
           },
           "imports": [
@@ -111,14 +118,14 @@
         }
       }
     },
-    "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/ApiTask.Data.csproj": {
+    "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/ApiTask.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/ApiTask.Data.csproj",
+        "projectUniqueName": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/ApiTask.Data.csproj",
         "projectName": "ApiTask.Data",
-        "projectPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/ApiTask.Data.csproj",
+        "projectPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/ApiTask.Data.csproj",
         "packagesPath": "/home/university/.nuget/packages/",
-        "outputPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/ApiTask.Data/obj/",
+        "outputPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/university/.nuget/NuGet/NuGet.Config"
@@ -154,13 +161,93 @@
               "target": "Package",
               "version": "[2.1.35, )"
             },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
             "MySql.Data": {
               "target": "Package",
               "version": "[8.3.0, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
-              "version": "[9.0.0-preview.1, )"
+              "version": "[8.0.2, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.118, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Domain/ApiTask.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Domain/ApiTask.Domain.csproj",
+        "projectName": "ApiTask.Domain",
+        "projectPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Domain/ApiTask.Domain.csproj",
+        "packagesPath": "/home/university/.nuget/packages/",
+        "outputPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/university/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/ApiTask.Data.csproj": {
+                "projectPath": "/home/university/Desktop/3th Sem/SD3/lab3/API Tasks/api-csharp-sd3-daynortito/ApiTask.Data/ApiTask.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.3.0, )"
             }
           },
           "imports": [
